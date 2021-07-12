@@ -66,7 +66,7 @@ scene.background = spaceTexture;
 // Avatar
 // const myUrl = 'https://raw.githubusercontent.com/SanjoyPator1/ThreeJSwebsite/main/sanjoy1.png'
 
-const profTexture = new THREE.TextureLoader().load('sanjoy1.png');
+const profTexture = new THREE.TextureLoader().load('sp.jpg');
 
 const prof = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: profTexture }));
 
@@ -75,13 +75,13 @@ scene.add(prof);
 // Moon
 
 const moonTexture = new THREE.TextureLoader().load('moon.jpg');
-const normalTexture = new THREE.TextureLoader().load('normal.jpg');
+//const normalTexture = new THREE.TextureLoader().load('normal.jpg');
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
   new THREE.MeshStandardMaterial({
     map: moonTexture,
-    normalMap: normalTexture,
+    //normalMap: normalTexture,
   })
 );
 
